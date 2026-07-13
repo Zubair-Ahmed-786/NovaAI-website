@@ -1,0 +1,282 @@
+:root {
+    --head1-color: #3B82F6;
+    --head2-color: #FFFFFF;
+    --para-color: #B8C1D1;
+    --head1-size: 40px;
+    --text-align: center;
+    --font-W: 600;
+    --para-size: 20px;
+    --pad: 10px;
+    --box-B-G: #090836;
+    --primary-color: #3B82F6;
+}
+
+body {
+    background-color: #0B1120;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    align-items: center;
+    height: 70px;
+    background-color: #010146;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    color: var(--head2-color);
+
+}
+
+header a {
+    color: var(--primary-color);
+    font-weight: var(--font-W);
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+header a:hover {
+    color: #FFFFFF;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    padding: 8px;
+    display: block;
+    margin: 10px auto;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: var(--font-W);
+}
+
+.button:hover {
+    box-shadow: #fff 0px 2px 15px;
+}
+
+h2 {
+    color: var(--head2-color);
+    text-align: var(--text-align);
+    font-size: var(--head1-size);
+    padding: 40px 0px 10px 0px;
+}
+
+h3 {
+    color: var(--head2-color);
+    text-align: var(--text-align);
+    padding: var(--pad);
+}
+
+p {
+    font-size: var(--para-size);
+    color: var(--para-color);
+    text-align: var(--text-align);
+
+}
+
+span {
+    color: var(--head2-color);
+    padding: 10px;
+    font-weight: var(--font-W);
+    font-size: 18px;
+}
+
+/* Hero-sect-CSS */
+
+.hero {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(images/B-G-Image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: var(--head2-color);
+    text-align: var(--text-align);
+}
+
+.hero p {
+    color: var(--para-color);
+    text-align: var(--text-align);
+    font-size: var(--para-size);
+}
+
+/* Services-sect-CSS */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services-card {
+    height: 200px;
+    width: 320px;
+    background-color: var(--box-B-G);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.services-card:hover {
+    box-shadow: #000 0px 2px 30px;
+}
+
+.services-card h3 {
+    text-align: left;
+    color: var(--head2-color);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.services-card p {
+    text-align: left;
+    color: var(--para-color);
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* About-sect-CSS */
+
+.about-card {
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.about-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-card p {
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+/* Pricing-sect-CSS */
+
+.pricing-card {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: var(--box-B-G);
+    margin: 20px;
+}
+
+.pricing-card:hover {
+    box-shadow: #000 0px 2px 30px;
+}
+
+.pricing-card h2 {
+    text-align: left;
+    color: var(--head2-color);
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.pricing-card p {
+    text-align: left;
+    color: var(--para-color);
+    font-size: 18px;
+    padding: 10px 0px 20px 10px;
+}
+
+.btn {
+    padding: 10px 15px 15px 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: var(--font-W);
+}
+
+.btn:hover {
+    box-shadow: #fff 0px 2px 15px;
+}
+
+/* Contact-sect-CSS */
+
+.contact p {
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 18px;
+    text-align: var(--text-align);
+    color: var(--para-color);
+}
+
+/* Footer */
+
+footer {
+    background-color: #010146;
+    height: 70px;
+}
+
+footer p {
+    font-size: 17px;
+    padding: 5px 0px 0px 0px;
+}
+
+/* Media-Querry */
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    header a {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-card {
+        width: 300px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+
+    header,
+    .container {
+        flex-direction: column;
+    }
+}
